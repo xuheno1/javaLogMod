@@ -28,7 +28,7 @@ public class LogModApplication {
 	
 	@RequestMapping("/erring")
 	public String returnErr() {
-		logger.info("error, oops");
+		logger.info("error, oops" + counter);
 		return "error - oops";
 	}
 	
