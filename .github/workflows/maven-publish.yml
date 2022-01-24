@@ -33,7 +33,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: javaLogMod
-        path: storage/jar/LogMod.jar
+        path: target/*.jar
 
   #  - name: Publish to GitHub Packages Apache Maven
   #    run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
