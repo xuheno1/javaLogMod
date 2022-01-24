@@ -22,13 +22,13 @@ public class LogModApplication {
 	
 	@RequestMapping("/xuhe")
 	public String returnXuhe() {		
-		logger.info("should to file"+ counter);
+		logger.info("should file, "+ counter);
 		return "xuhe Created" + counter++;	
 	}
 	
 	@RequestMapping("/erring")
 	public String returnErr() {
-		logger.info("error - oops");
+		logger.info("error, oops");
 		return "error - oops";
 	}
 	
